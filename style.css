@@ -1,0 +1,64 @@
+body {
+    background-image: url(./img/peli.webp);
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    background-color: #e6dcd5;
+    border-radius: 10px;
+    color: #180ae6;
+    text-shadow: 3px 3px rgb(182, 96, 199);
+    box-shadow: 6px 6px rgb(17, 94, 211);
+    font-size: 50px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ce0a0ad7;
+    color: #fff;
+    border: 2px orange solid;
+    cursor: pointer;
+}
+
+#results {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.movie {
+    min-height: 200px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #e6dcd5;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 2px black solid;
+    box-shadow: 10px 10px rgba(235, 136, 8, 0.616);
+}
+
+.movie img {
+    width: 100px;
+    float: left;
+    margin-right: 10px;
+}
+
+.movie h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.movie p {
+    margin: 5px 0;
+}
