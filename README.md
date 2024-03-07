@@ -1,83 +1,18 @@
-## Link al curso completo de Javascript en Youtube:
-[VIDEO CURSO GRATIS COMPLETO: JavaScript Desde Cero por Sergie Code](https://youtu.be/N8Xt5rP_DUo)
+# 💫 About Me:
+💻Developer Frontend
 
 
-# Tutorial de búsqueda de películas con JavaScript
+## 🌐 Socials:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/gerardo-montini/) 
 
-Link para ver resultado: [BUSCADOR PELICULAS FINALIZADO](https://buscador-peliculas-javascript.netlify.app/)
+# 💻 Tech Stack:
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![GithubPages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=Gerardo Montini&theme=shades-of-purple&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=Gerardo Montini&theme=shades-of-purple&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=Gerardo Montini&theme=shades-of-purple&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
-Este es un tutorial que te guiará a través del proceso de creación de una aplicación de buscador de películas utilizando JavaScript. La aplicación utiliza la API de The Movie Database (TMDb) para buscar películas y mostrar sus detalles. A continuación, se proporciona una explicación paso a paso del código JavaScript necesario para que funcione la aplicación.
+---
+[![](https://visitcount.itsvg.in/api?id=Gerardo Montini&icon=0&color=0)](https://visitcount.itsvg.in)
 
-## Paso 1: Configuración de la API
-
-Antes de comenzar, necesitarás obtener una clave de API de TMDb. Puedes obtener una clave de API registrándote en el sitio web de TMDb. Una vez que tengas tu clave de API, reemplaza `'API_KEY'` en el código con tu clave de API.
-
-    let api_key = 'TU_CLAVE_DE_API'
-
-## Paso 2: Definición de las URL de la API
-
-A continuación, definiremos las URL base de la API y la URL base de las imágenes de las películas. Estas URL se utilizarán para realizar la búsqueda de películas y mostrar las imágenes de las mismas respectivamente.
-
-    let urlBase = 'https://api.themoviedb.org/3/search/movie'
-    let urlImg = 'https://image.tmdb.org/t/p/w200'
-
-## Paso 3: Obtención de elementos del DOM
-
-En este paso, obtenemos los elementos HTML necesarios para interactuar con la aplicación. Utilizamos `getElementById` para obtener el botón de búsqueda y el campo de entrada de texto.
-
-    document.getElementById('searchButton').addEventListener('click', searchMovies)
-    let resultContainer = document.getElementById('results')
-
-## Paso 4: Función de búsqueda de películas
-
-La función `searchMovies` se ejecuta cuando se hace clic en el botón de búsqueda. Obtiene el valor ingresado en el campo de entrada de texto y realiza una solicitud a la API de TMDb para buscar películas que coincidan con el término de búsqueda.
-
-    function searchMovies(){
-        resultContainer.innerHTML = 'Cargando...'
-        let searchInput = document.getElementById('searchInput').value
-        fetch(`${urlBase}?api_key=${api_key}&query=${searchInput}`)
-        .then(response => response.json())
-        .then(response => displayMovies(response.results))
-    }
-
-## Paso 5: Función para mostrar las películas encontradas
-
-La función `displayMovies` se utiliza para mostrar los resultados de la búsqueda de películas. Borra el contenido anterior del contenedor de resultados y luego itera sobre la lista de películas encontradas. Para cada película, crea elementos HTML para mostrar su título, fecha de lanzamiento, descripción y póster.
-
-    function displayMovies(movies){
-        resultContainer.innerHTML = ''
-    
-        if(movies.length === 0){
-            resultContainer.innerHTML= '<p>No se encontraron resultados para tu búsqueda </p>'
-            return
-        }
-    
-        movies.forEach(movie => {
-            let movieDiv = document.createElement('div')
-            movieDiv.classList.add('movie')
-    
-            let title = document.createElement('h2')
-            title.textContent = movie.title
-    
-            let releaseDate = document.createElement('p')
-            releaseDate.textContent = 'La fecha de lanzamiento fue: ' + movie.release_date
-    
-            let overview = document.createElement('p')
-            overview.textContent = movie.overview
-    
-            let posterPath = urlImg + movie.poster_path
-            let poster = document.createElement('img')
-            poster.src = posterPath
-    
-            movieDiv.appendChild(poster)
-            movieDiv.appendChild(title)
-            movieDiv.appendChild(releaseDate)
-            movieDiv.appendChild(overview)
-    
-            resultContainer.appendChild(movieDiv)
-        })
-    }
-
-¡Y eso es todo! Siguiendo estos pasos, habrás creado una aplicación de buscador de películas en JavaScript utilizando la API de TMDb. Ahora puedes probar tu aplicación y ver cómo muestra los resultados de búsqueda de películas.
-
-Recuerda que debes tener el HTML y el CSS correspondiente disponibles en tu repositorio de GitHub para que la aplicación funcione correctamente.
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
