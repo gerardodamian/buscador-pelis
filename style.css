@@ -8,13 +8,12 @@ body {
     text-align: center;
 }
 
-
 h1 {
-     font-family: "Protest Revolution", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-    margin: 0 auto; /* Centra horizontalmente */
-    text-align: center; /* Centra el texto */
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto; 
+    text-align: center; 
     width: 100%;
     margin-bottom: 20px;
     color: #180ae6;
@@ -70,33 +69,28 @@ button {
 
 .movie h2 {
     font-family: "Protest Revolution", sans-serif;
-  font-weight: 400;
-  font-style: normal
-   font-size: 18px;
-    margin-top: 0;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .movie p {
     font-family: "Protest Revolution", sans-serif;
-  font-weight: 400;
-  font-style: normal
-    margin: 5px 0;
+    font-weight: 400;
+    font-style: normal;
 }
 .navbar {
     background-color: #0aa0e6 !important;
 }
- h2{
+h2 {
     color: #fff;
 }
 .contain {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
 }
 @media only screen and (min-width: 321px) and (max-width: 560px) {
-.banner
-{
-    width: 300px;
-}
-
+    .banner {
+        width: 300px;
+    }
 }

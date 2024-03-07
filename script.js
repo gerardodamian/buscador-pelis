@@ -15,7 +15,7 @@ function searchMovies() {
         .then((response) => response.json())
         .then((response) => displayMovies(response.results));
 }
-function displayMovies(movies) {
+function displayMovies(movies, index) {
     resultContainer.innerHTML = "";
 
     if (movies.length === 0) {
@@ -42,10 +42,17 @@ function displayMovies(movies) {
         let poster = document.createElement("img");
         poster.src = posterPath;
 
+        let button = document.createElement("button");
+
+        button.textContent = "Ver Pelicula 🎞️";
+        button.id = "verButton" + index;
+        button.addEventListener("click", () => showMovieDetails(movie));
+
         movieDiv.appendChild(poster);
         movieDiv.appendChild(title);
         movieDiv.appendChild(releaseDate);
         movieDiv.appendChild(overview);
+        movieDiv.appendChild(button);
 
         resultContainer.appendChild(movieDiv);
     });
