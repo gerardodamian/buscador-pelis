@@ -9,26 +9,36 @@ body {
 }
 
 h1 {
-    background-color: #e6dcd5;
-    border-radius: 10px;
+    margin: 0 auto; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto */
+    width: 100%;
+    margin-bottom: 20px;
     color: #180ae6;
-    text-shadow: 3px 3px rgb(182, 96, 199);
-    box-shadow: 6px 6px rgb(17, 94, 211);
+    text-shadow: 3px 3px rgb(251, 250, 252);
+
     font-size: 50px;
 }
 
 input[type="text"] {
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 300px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 20px;
+    box-shadow: 4px 4px rgba(187, 133, 33, 0.911);
+    border-radius: 5px;
 }
 
 button {
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 20px;
     background-color: #ce0a0ad7;
     color: #fff;
     border: 2px orange solid;
+    box-shadow: 4px 4px rgba(187, 133, 33, 0.911);
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -61,4 +71,18 @@ button {
 
 .movie p {
     margin: 5px 0;
+}
+.navbar {
+    background-color: #0aa0e6 !important;
+}
+.contain {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+}
+@media only screen and (min-width: 321px) and (max-width: 560px) {
+.banner
+{
+    width: 300px;
+}
+
 }
