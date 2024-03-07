@@ -75,9 +75,13 @@ button {
 .navbar {
     background-color: #0aa0e6 !important;
 }
+ h2{
+    color: #fff;
+}
 .contain {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
+  justify-content: center;
+  margin-bottom: 25px;
 }
 @media only screen and (min-width: 321px) and (max-width: 560px) {
 .banner
