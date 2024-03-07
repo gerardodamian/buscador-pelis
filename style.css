@@ -62,7 +62,7 @@ button {
 }
 
 .movie img {
-    width: 200px;
+    width: 400px;
     float: left;
     margin-right: 10px;
 }
@@ -96,7 +96,7 @@ h2 {
     transform: translateX(-50%);
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #d3aaaae5;
+    background-color: #eee239e5;
     border: 5px solid #f70303;
     border-radius: 10px;
     padding: 10px;
@@ -106,6 +106,9 @@ h2 {
 @media only screen and (min-width: 321px) and (max-width: 560px) {
     .banner {
         width: 300px;
+    }
+    .movie img {
+    width: 300px;
     }
     .details-container{
         font-size: 30px;
