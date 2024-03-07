@@ -97,7 +97,7 @@ h2 {
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #fff;
-    border: 1px solid #f70303;
+    border: 5px solid #f70303;
     padding: 10px;
     z-index: 999; /* Asegura que aparezca encima de las tarjetas */
 }
