@@ -29,7 +29,7 @@ function displayMovies(movies) {
         movieDiv.classList.add("movie");
         movieDiv.id = "movie" + index;
 
-        let title = document.createElement("h2");
+        let title = document.createElement("h3");
         title.textContent = movie.title;
 
         let releaseDate = document.createElement("p");
@@ -57,25 +57,20 @@ function displayMovies(movies) {
 
         resultContainer.appendChild(movieDiv);
     });
-   function showMovieDetails(movie) {
-       // Crear un elemento div para mostrar los detalles
-       let detailsContainer = document.createElement("div");
-       detailsContainer.textContent = `Si queres ver La Peli 🎞️, tenes que pagar 💵, Chinguenguencha!!!! 🤣🤣`;
-       detailsContainer.classList.add("details-container");
+    function showMovieDetails(movie) {
+        // Crear un elemento div para mostrar los detalles
+        let detailsContainer = document.createElement("div");
+        detailsContainer.textContent = `Si queres ver La Peli 🎞️, tenes que pagar 💵, Chinguenguencha!!!! 🤣🤣`;
+        detailsContainer.classList.add("details-container");
 
         let movieDiv = document.getElementById("movie" + movies.indexOf(movie)); // Busca la tarjeta por su identificador único
 
         // Agregar el elemento de detalles encima de la tarjeta de la película
         movieDiv.insertAdjacentElement("afterend", detailsContainer);
 
-
-      
-
-       // Desaparecer el mensaje después de unos segundos
-       setTimeout(() => {
-           detailsContainer.style.display = "none";
-       }, 5000); // Cambia el número de milisegundos (5000 ms = 5 segundos)
-   }
-
-
+        // Desaparecer el mensaje después de unos segundos
+        setTimeout(() => {
+            detailsContainer.style.display = "none";
+        }, 6000); // Cambia el número de milisegundos (5000 ms = 5 segundos)
+    }
 }
