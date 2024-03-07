@@ -15,7 +15,7 @@ function searchMovies() {
         .then((response) => response.json())
         .then((response) => displayMovies(response.results));
 }
-function displayMovies(movies, index) {
+function displayMovies(movies) {
     resultContainer.innerHTML = "";
 
     if (movies.length === 0) {
@@ -24,9 +24,10 @@ function displayMovies(movies, index) {
         return;
     }
 
-    movies.forEach((movie) => {
+    movies.forEach((movie, index) => {
         let movieDiv = document.createElement("div");
         movieDiv.classList.add("movie");
+        movieDiv.id = "movie" + index;
 
         let title = document.createElement("h2");
         title.textContent = movie.title;
@@ -56,4 +57,25 @@ function displayMovies(movies, index) {
 
         resultContainer.appendChild(movieDiv);
     });
+   function showMovieDetails(movie) {
+       // Crear un elemento div para mostrar los detalles
+       let detailsContainer = document.createElement("div");
+       detailsContainer.textContent = `Si queres ver La Peli 🎞️, tenes que pagar 💵, Chinguenguencha!!!! 🤣🤣`;
+       detailsContainer.classList.add("details-container");
+
+        let movieDiv = document.getElementById("movie" + movies.indexOf(movie)); // Busca la tarjeta por su identificador único
+
+        // Agregar el elemento de detalles encima de la tarjeta de la película
+        movieDiv.insertAdjacentElement("afterend", detailsContainer);
+
+
+      
+
+       // Desaparecer el mensaje después de unos segundos
+       setTimeout(() => {
+           detailsContainer.style.display = "none";
+       }, 5000); // Cambia el número de milisegundos (5000 ms = 5 segundos)
+   }
+
+
 }

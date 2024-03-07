@@ -89,8 +89,24 @@ h2 {
     justify-content: center;
     margin-bottom: 25px;
 }
+.details-container {
+    position: fixed;
+    top: 100px; /* Ajusta la posición vertical según sea necesario */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%);
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #fff;
+    border: 1px solid #f70303;
+    padding: 10px;
+    z-index: 999; /* Asegura que aparezca encima de las tarjetas */
+}
+
 @media only screen and (min-width: 321px) and (max-width: 560px) {
     .banner {
         width: 300px;
+    }
+    .details-container{
+        font-size: 25px;
     }
 }
